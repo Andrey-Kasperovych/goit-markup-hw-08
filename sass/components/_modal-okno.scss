@@ -1,0 +1,187 @@
+/* Модальное окно */
+
+fieldset{
+    border-width: 5px;
+    border-color: 0;
+  }
+  
+  textarea{
+    resize: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  
+  .backdrop.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .form{
+    position: relative;
+    width: 528px;    
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: $primary-white-color;
+  }
+  
+  .form h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+
+  .form-field{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-bottom: 20px;
+  } 
+  
+  
+  
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label,
+  .form-field-1:focus-within > .form-label {
+    transform: translate(-26px, -40px);
+    color: $accent;  
+  }
+  
+  .form-input:focus, 
+   textarea:focus{
+    border: 1px solid $accent;
+  }
+  
+  
+  .form-input{
+    width: 100%;
+    display: block;
+    width: 448px;
+    height: 40px; 
+    border: 1px solid rgba(33, 33, 33, 0.2);  
+    border-radius: 4px; 
+    margin: 0;
+    padding: 6px 10px;
+    padding-left: 42px;
+    outline: none;
+  }
+
+  .form-label{
+      
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    
+    position: absolute;
+    display: block;
+    
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    transition: transform 250ms linear;
+    color: $primary-text-color;  
+  }
+  
+  .form-label-comment{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    
+    position: absolute;
+    display: block;
+    
+    top: 18px;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: transform 250ms linear;
+    color: $primary-text-color; }
+  
+    .form-field textarea:focus + .form-label-comment,
+    .form-field textarea:not(:placeholder-shown) + .form-label-comment
+    {
+      transform: translate(-26px, -40px);  
+      color: $accent;
+    }
+
+    .icon{
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 19px;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+         
+      }      
+           
+      .icon.person{
+        background-image: url(../images/person.svg)
+      }
+      
+      .form-input:focus ~ .icon.person{
+        background-image: url(../images/person-hover.svg)
+      }
+      
+      .icon.telefon{
+        background-image: url(../images/phone.svg)
+      }
+      
+      .form-input:focus ~ .icon.telefon{
+        background-image: url(../images/phone-hover.svg)
+      }
+      
+      .icon.email{
+        background-image: url(../images/email.svg)
+      }
+      
+      .form-input:focus ~ .icon.email{
+        background-image: url(../images/email-hover.svg)
+      }
+
+      .form-field-1{
+        position: relative; 
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-bottom: 20px;
+      } 
+
+      .form-field-1:focus-within > .form-input{
+        border: 1px solid $accent;
+      }
+      
+      /* Избавляемся от id */
+      
+      .form-field-2{
+        position: relative; 
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-bottom: 20px;
+      } 

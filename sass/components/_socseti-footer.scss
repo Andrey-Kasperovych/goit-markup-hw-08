@@ -1,0 +1,44 @@
+/*Соц. сети футера*/
+
+.connect-glav .connect{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.socseti-footer{
+    display: flex;
+}
+
+.socseti-footer .button-footer{
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    align-items: center;
+    justify-content: center;
+}
+
+.socseti-footer .button-footer .button-icon{
+    --color3: #{$primary-white-color};
+    width: 20px;
+    height: 20px;
+}
+
+.socseti-footer .button-footer:hover{
+    background-color: $accent;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socseti-footer li {
+    margin-right: 10px;
+}
+
+
+
+.socseti-footer li:nth-child(4n) {
+    margin-right: 0;
+}

@@ -1,0 +1,22 @@
+.tech-button {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 500px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+
+     .item {
+        margin-right: 8px;
+    
+    }
+    
+     .item:nth-child(5n) {
+        margin-right: 0;
+    }
+}
+
