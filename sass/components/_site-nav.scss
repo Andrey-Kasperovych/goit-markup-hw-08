@@ -2,6 +2,12 @@
     @extend %list
     }
 
+.adapt-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .site-nav.list, .auth-nav {
     font-weight: 500;
     font-size: 14px;

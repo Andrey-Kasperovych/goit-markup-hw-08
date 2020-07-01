@@ -1,6 +1,14 @@
 .section, .workk {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;     
+}
+
+.workk{
+    display: none;
+
+    @media screen and(min-width:$desktop) {
+        display: block;
+    }
 }
 
 .work-list {
