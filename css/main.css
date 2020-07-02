@@ -161,6 +161,39 @@ span {
   --color2:  #2196f3;
 }
 
+.menu-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-button .cross {
+  display: none;
+}
+
+.menu-button .menu {
+  display: block;
+}
+
+.is-open .cross {
+  display: block;
+}
+
+.is-open .menu {
+  display: none;
+}
+
+.header-menu {
+  display: none;
+}
+
+.is-open + .header-menu {
+  display: block;
+}
+
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -180,7 +213,6 @@ span {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 646px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -617,6 +649,12 @@ span {
             flex-direction: row;
     text-align: left;
     margin-left: 94px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .rassilka .button {
+    margin-bottom: 20px;
   }
 }
 

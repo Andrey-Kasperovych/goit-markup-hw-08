@@ -13,13 +13,19 @@
   </head>
   <body class="page">
       <!--Логотип сайта, ссылки навигации, электронная почта и телефон фирмы-->
-        <header class="page-header"> 
+        <header class="page-header container"> 
     
-            <nav class="container main-nav">          
+                      
         <a href="./index.html" class="logo">
            <span>Web</span> Studio
         </a>
-
+        <button class="menu-button" data-menu-button>
+            <svg class="burger" width="40" height="40">
+                <use class="menu" href="./images/sprite-burger.svg#menu"></use>
+                <use class="cross" href="./images/sprite-burger.svg#cross"></use>
+            </svg>
+        </button>
+      <div class="header-menu" data-menu>
         <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -44,7 +50,8 @@
                 </a>
             </li>
         </ul>
-      </nav>
+    </div>    
+      
         </header>
 
     
@@ -405,6 +412,7 @@
 </script> 
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 </body>
 </html>

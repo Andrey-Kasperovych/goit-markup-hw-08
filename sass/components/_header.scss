@@ -1,0 +1,35 @@
+.menu-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .cross {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+
+}
+
+.is-open {
+    .cross {
+        display: block;
+    }
+    .menu {
+        display: none;  
+    }
+} 
+
+
+ 
+.header-menu {
+    display: none;
+    .is-open + & {
+        display: block;
+    }
+
+    
+}

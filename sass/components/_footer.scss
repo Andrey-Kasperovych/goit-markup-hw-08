@@ -77,10 +77,14 @@ margin-bottom: 60px;
       margin-bottom: 20px;
   }
 
-   @media screen and(min-width: 1200px) {
+   @media screen and(min-width: $desktop) {
      flex-direction: row;
      text-align: left;
      margin-left: 94px ;
+     align-items: flex-end;
+      .button {
+          margin-bottom: 20px;
+      }     
    }  
  
 }
