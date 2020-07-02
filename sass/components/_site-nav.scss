@@ -16,12 +16,31 @@
     }
 
 .site-nav {
+    .item {
+        text-align: center;
+    }
     display: flex;
-    margin-left: 86px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $tablet){
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-left: 86px;
+    }
+
+
+   
 }    
 
 .site-nav .item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: $tablet){
+        margin-right: 25px;
+    }
+    @media screen and (min-width: $desktop){
+        margin-right: 50px;
+    }
 }
 
 .site-nav .link{

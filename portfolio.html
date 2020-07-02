@@ -204,6 +204,7 @@
         <!--Логотип, физический адрес, контакты, страницы в соц. сетях, подписка на рассылку на странице Портфолио-->
         <footer class="footer">
             <div class="footer-verh">  
+             <div class="adapt-left-footer">   
               <div class="logadress">
                   <a href="./index.html" class="logo"><span>Web</span> Studio</a>                 
                            
@@ -245,12 +246,15 @@
                     </a></li>
                   </ul>
               </div>
-              
-              <div class="rassilka">
+             </div> 
+        
+              <form class="rassilka">   
+                <div class="rassilka-list">    
                   <p class="signecher">подписаться на рассылку</p> 
-                  <input type="text" name="user_name" />
-                  <button type="submit" class="button primary">Подписаться</button>
-              </div>
+                  <input class="" type="email" name="mail" id="mail" autocomplete="off"  placeholder="E-mail"/>
+                </div>
+                <button type="submit"class="button primary rassilka-list">Подписаться</button>    
+              </form>
           </div>  
               
               <p class="footer-down">2020 | Developed by GoIT Students </p>

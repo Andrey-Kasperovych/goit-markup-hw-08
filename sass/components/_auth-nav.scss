@@ -1,17 +1,38 @@
 .auth-nav {
     display: flex;
     margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-     .item + .item {
-        margin-left: 30px;
+    @media screen and (max-width: 767px) {
+        .item + .item .link{
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+
+        .item {
+            margin-left: 20px;
+        }
     }
     
     
      .link{display: block;
                     color: $primary-text-color;
-                    padding-top: 32px;
-                    padding-bottom: 32px;
+                    padding-top:0;
+                    padding-bottom: 5px;
                     --color2: #{$primary-text-color};
+
+         
+         
+                    @media screen and(min-width:$desktop) {
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+                    }
+                       
     }
     
      .item a{

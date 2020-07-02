@@ -2,9 +2,13 @@
     font-family: Raleway, cursive; 
     font-weight: bold;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 44px;
     letter-spacing: 0.03em; 
     text-decoration: none; 
+
+    @media screen and (min-width: $tablet){
+        line-height: 83px;
+    }
 }
 
 
