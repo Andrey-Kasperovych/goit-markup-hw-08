@@ -31,13 +31,17 @@ fieldset{
   
   .form{
     position: relative;
-    width: 528px;    
+    width: 450px;    
     border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
     background-color: $primary-white-color;
+
+    @media screen and (min-width: $desktop) {
+      width: 528px;
+    }
   }
   
   .form h2{
@@ -49,6 +53,7 @@ fieldset{
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+    color: $title-text-color;
   }
 
   .form-field{
@@ -77,7 +82,7 @@ fieldset{
   .form-input{
     width: 100%;
     display: block;
-    width: 448px;
+    width: 370px;
     height: 40px; 
     border: 1px solid rgba(33, 33, 33, 0.2);  
     border-radius: 4px; 
@@ -85,6 +90,10 @@ fieldset{
     padding: 6px 10px;
     padding-left: 42px;
     outline: none;
+
+    @media screen and (min-width: $desktop) {
+      width: 448px;
+    }
   }
 
   .form-label{
