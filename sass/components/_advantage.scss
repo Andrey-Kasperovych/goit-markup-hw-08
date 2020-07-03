@@ -14,9 +14,11 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+    
 
      .item {
         width: 270px;
+        margin-bottom: 30px;
         @media screen and (min-width: $tablet){
             margin-right: 30px;
         }
