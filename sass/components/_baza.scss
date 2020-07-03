@@ -16,3 +16,15 @@ html {
    background-color: $primary-white-color;
    color: $primary-text-color;
      }
+
+.container {
+  width: 450px;
+
+  @media screen and (min-width: $tablet) {
+    width: 738px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+}
