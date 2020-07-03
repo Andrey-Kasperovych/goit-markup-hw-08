@@ -55,12 +55,13 @@
 }
 
 
-.work-title{color: var(--title-text-color);
+.work-title{color: $title-text-color;
             font-weight: bold;
             font-size: 36px;
             line-height: 1.17;
             letter-spacing: 0.03em;
             text-align: center;
             margin: 0;
+            margin-bottom: 50px;
         }
 

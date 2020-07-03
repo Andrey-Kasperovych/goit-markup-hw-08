@@ -6,6 +6,10 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+
+     a {
+        text-decoration: none; 
+     }
 }
 
 .tehnokryaki .item {
@@ -14,7 +18,7 @@
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
 }
 
 
@@ -38,7 +42,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;  
+    letter-spacing: 0.06em;     
     /*padding-left: 24px;*/
     /*width: 322px; 
     margin-left: auto;
@@ -50,7 +54,7 @@
 .tehnokryaki p{color: $primary-text-color;
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;     
     /*padding-left: 24px;*/
     /*width: 322px;  
     margin-left: auto;
@@ -59,7 +63,7 @@
 }
 
 .text-under-images {
-    padding-left: 24px;
+    padding-left: 24px;    
 }
 
 

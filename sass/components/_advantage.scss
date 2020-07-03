@@ -16,15 +16,21 @@
     padding-right: 0;
 
      .item {
-        width: 278px;
-        @media screen and (min-width: $desktop){
+        width: 270px;
+        @media screen and (min-width: $tablet){
             margin-right: 30px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            &:nth-child(4n) {
+                margin-right: 0;
+            }   
         }
     }
     
-     .item:nth-child(4n) {
-        margin-right: 0;
-    }
+    //  .item:nth-child(4n) {
+    //     margin-right: 0;
+    // }
     
      .item .button-icon{
         width: 70px;

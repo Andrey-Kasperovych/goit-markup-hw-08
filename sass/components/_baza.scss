@@ -21,10 +21,10 @@ html {
   width: 380px;
 
   @media screen and (min-width: $tablet) {
-    width: 738px;
+    width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 100%;
+    width: 1200px;
   }
 }
