@@ -9,20 +9,26 @@
     }
     
 
-.hero-title{           
+.hero-title{     
            margin-top: 0;
            margin-bottom: 30px;
            color: $primary-white-color;
            font-weight: 900;
-           font-size: 44px;
+           font-size: 24px;
            line-height: 1.36;
-           text-align: center;
            letter-spacing: 0.06em;
            text-transform: uppercase;
-        //    width: 646px;
-           margin-right: auto;
-           margin-left: auto;
-}
+    
+
+           @include media-tablet {
+            font-size: 26px;
+           }
+
+           @include media-desktop {
+               font-size: 44px;
+           }
+        }
+
 
  .hero-link{
             background-color: $accent;

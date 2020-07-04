@@ -16,13 +16,20 @@ html {
    background-color: $primary-white-color;
    color: $primary-text-color;
      }
+// 480 768 1200
 
 .container {  
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  //max-width: 1200px;
   // outline: 1px solid teal;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
 
   @media screen and (min-width: $tablet) {
     width: $tablet;

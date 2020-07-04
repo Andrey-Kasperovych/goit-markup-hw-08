@@ -32,7 +32,7 @@
 }    
 
 .customers-list  {
-
+    
     .item{width: 170px;
         height: 90px;
         border-radius: 4px;
@@ -71,6 +71,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+
+        @include media-mobile {
+            font-size: 40px;
+        }
     }
 }
 
