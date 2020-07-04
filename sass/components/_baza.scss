@@ -17,14 +17,21 @@ html {
    color: $primary-text-color;
      }
 
-.container {
-  width: 380px;
+.container {  
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  // outline: 1px solid teal;
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    width: 1230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }
